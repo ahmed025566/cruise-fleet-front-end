@@ -1,5 +1,12 @@
 import { render } from 'preact'
 import { App } from './app.jsx'
+import { Provider } from 'react-redux';
 import './index.css'
+import store from './redux/store.js'
 
-render(<App />, document.getElementById('app'))
+render(
+    <Provider store={store}>
+    <App />
+    </Provider>
+    , document.getElementById('app')
+)
