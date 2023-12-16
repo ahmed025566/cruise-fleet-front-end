@@ -8,7 +8,7 @@ import Landing_page from './components/Landing_page';
 
 export function App() {
 
-  const { logged_in } = useSelector(state => state.user)
+  const { logged_in, loading } = useSelector(state => state.user)
   const history = useNavigate();
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ export function App() {
   useEffect(() => {
     if(logged_in) {
       history('/dashboard')      
-    } else if (logged_in == false) {
+    } else if (logged_in === false) {
       history('/')
     }
 
@@ -29,6 +29,7 @@ export function App() {
   
 
   return (
+    
     <>
     <Routes>
       <Route path='/' element={<Landing_page />} />  

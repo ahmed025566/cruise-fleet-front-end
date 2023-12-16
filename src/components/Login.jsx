@@ -17,8 +17,7 @@ const Login = () => {
           email: email.current.value,
           password: password.current.value
         }
-      },
-      { withCredentials: true }));
+      }));
   }
 
   return (
