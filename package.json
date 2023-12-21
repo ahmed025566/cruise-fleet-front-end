@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.19.3"
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.6.2",
+    "preact": "^10.19.3",
+    "react-router-dom": "^6.21.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.7.0",
